@@ -8,7 +8,10 @@
 <title>Productos Organicos</title>
 </head>
 <body>
-
+<nav>
+Aqui va el panel de navegacion 
+</nav>
+<seccion>
 <h1>Productos</h1>
 		 <button><a href="${pageContext.request.contextPath}/productos/findOne?opcion=1">Agregar</a></button>
 
@@ -21,13 +24,13 @@
      <th>precio</th>
      <th>stock</th>
      <th>imagen</th>
-     </tr>
+</tr>
      
   <thead>
   <tbody>
   
   <c:forEach var="item" items="${productos}">
-     <tr>
+    <tr>
 	     <td> ${item.idProducto}</td>
 	     <td>${item.nombre}</td>
 	     <td>${item.descripcion}</td>
@@ -38,10 +41,14 @@
 		 <button><a href="${pageContext.request.contextPath}/productos/findOne?idProducto=${item.idProducto}&opcion=1">Actualizar</a></button>
 		 <button><a href="${pageContext.request.contextPath}/productos/findOne?idProducto=${item.idProducto}&opcion=2">Eliminar</a></button>
 
-     </tr>
+    </tr>
  		</c:forEach>
 </tbody>
 </table>
+</seccion>
+<footer>
+<div>Copyright - Programación Distribuida 2024</div>
+</footer>
 
 </body>
 </html>

@@ -7,6 +7,10 @@
 <title>Productos Organicos</title>
 </head>
 <body>
+<nav>
+Panel de navegacion 
+</nav>
+<section>
 <h1>Productos</h1>
 <form action="del" method="get">
 	<input type="hidden" id="idProducto" name="idProducto" value="${producto.idProducto}"/>
@@ -16,5 +20,10 @@
 	<button type="button" onClick="windows.location.href='/bd-productos-organicos-web/productos/findAll'; return false">Cancelar</button>
 	
 </form>
+<footer>
+<div>Copyright - Programación Distribuida 2024</div>
+</footer>
+</section>
+
 </body>
 </html>

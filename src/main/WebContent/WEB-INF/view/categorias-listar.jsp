@@ -8,7 +8,10 @@
 <title>Productos Organicos</title>
 </head>
 <body>
-
+<nav>
+Aqui va el panel de navegacion 
+</nav>
+<seccion>
 <h1>Categorias</h1>
 		 <button><a href="${pageContext.request.contextPath}/categorias/findOne?opcion=1">Agregar</a></button>
 
@@ -38,6 +41,12 @@
  		</c:forEach>
 </tbody>
 </table>
+</seccion>
+<footer>
+<div>Copyright - Programación Distribuida 2024</div>
+</footer>
+
+
 
 </body>
 </html>
